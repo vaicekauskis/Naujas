@@ -7,6 +7,7 @@ public class Main {
 //        System.out.println(name.length());
 //        System.out.println(name.substring(2));
 //        System.out.println(name.substring(2,4));
+        System.out.println("-----------1 uzduotis-----------");
 
 //     1.  Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą
 //        ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
@@ -58,13 +59,42 @@ public class Main {
 //   Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 
         String text = "An American in Paris";
-        System.out.println(text.replace("A" , "*"));
+        System.out.println(text.replaceAll("[Aa]" , "*"));
 
         System.out.println("---------------6 uzduotis------------");
 
 //        Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses.
 //        Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”,
 //        “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+
+        System.out.println(text.replaceAll("[aAEeIiOoUuYy]",""  ));
+        String text1 = "Breakfast at Tiffany's";
+        System.out.println(text1.replaceAll("[aAEeIiOoUuYy]",""  ));
+        String text2 = "2001: A Space Odyssey";
+        System.out.println(text2.replaceAll("[aAEeIiOoUuYy]",""  ));
+        System.out.println("It's a Wonderful Life".replaceAll("[aAEeIiOoUuYy]",  "" ));
+
+
+        System.out.println("------------7 uzduotis-----------");
+
+//        Stringe, kurį generuoja toks kodas: "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int)
+//                (Math.random() * 7)+1) + " - A New Hope" Surasti ir atspausdinti epizodo numerį.
+
+        String starWars = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+        String starWars2 = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+        String starWars3 = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+
+        System.out.println(starWars);
+        System.out.println(starWars2);
+        System.out.println(starWars3);
+
+        System.out.println(starWars.substring(starWars.length()-14 ,starWars.length()-13));
+        System.out.println(starWars.replaceAll("[^0-9]", "" ));
+
+
+
+
+
 
 
 
